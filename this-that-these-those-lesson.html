@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This / That / These / Those — English Lesson</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Inter:wght@300;400;500;600&family=Azeret+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/this-that-these-those-lesson.css">
+<link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+<a href="index.html" class="back-home">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 3L5 8l5 5"/>
+  </svg>
+  Index
+</a>
+
+<!-- ══ HERO ═══════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-proximity">
+    <div class="prox-near"></div>
+    <div class="prox-far"></div>
+  </div>
+  <div class="lesson-tag">English Lesson · A1–A2 Level</div>
+  <div class="hero-words">
+    <div class="hw-item w-this">
+      <span class="hw-word">THIS</span>
+      <span class="hw-tag">singular · near</span>
+      <span class="hw-sub">este / esta / esto</span>
+    </div>
+    <div class="hw-item w-that">
+      <span class="hw-word">THAT</span>
+      <span class="hw-tag">singular · far</span>
+      <span class="hw-sub">ese / esa / eso / aquel</span>
+    </div>
+    <div class="hw-item w-these">
+      <span class="hw-word">THESE</span>
+      <span class="hw-tag">plural · near</span>
+      <span class="hw-sub">estos / estas</span>
+    </div>
+    <div class="hw-item w-those">
+      <span class="hw-word">THOSE</span>
+      <span class="hw-tag">plural · far</span>
+      <span class="hw-sub">esos / esas / aquellos</span>
+    </div>
+  </div>
+  <p class="hero-footer-note">
+    <strong>near</strong> = close to you &nbsp;·&nbsp; <strong>far</strong> = away from you &nbsp;·&nbsp; also used for <strong>time</strong> (now vs then)
+  </p>
+  <div class="hero-arc"></div>
+</header>
+
+<div class="container">
+
+  <!-- 00 — DISTANCE DIAGRAM -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">00</span>
+      <h2>Near vs Far — The Core Idea</h2>
+    </div>
+
+    <div class="distance-diagram">
+      <div class="dd-title">Distance from the speaker → the farther the bar, the farther the object</div>
+      <div>
+        <div class="dd-separator"><div class="dd-sep-line"></div><div class="dd-sep-label">singular</div><div class="dd-sep-line"></div></div>
+        <div style="height:16px"></div>
+        <div class="dd-row">
+          <div class="dd-label" style="color:var(--this)">THIS</div>
+          <div class="dd-bar db-this"></div>
+          <div class="dd-note"><strong>Close</strong> — next to you · "this phone" (in your hand)</div>
+        </div>
+        <div style="height:12px"></div>
+        <div class="dd-row">
+          <div class="dd-label" style="color:var(--that)">THAT</div>
+          <div class="dd-bar db-that"></div>
+          <div class="dd-note"><strong>Far</strong> — over there · "that car" (across the street)</div>
+        </div>
+      </div>
+      <div>
+        <div class="dd-separator"><div class="dd-sep-line"></div><div class="dd-sep-label">plural</div><div class="dd-sep-line"></div></div>
+        <div style="height:16px"></div>
+        <div class="dd-row">
+          <div class="dd-label" style="color:var(--these)">THESE</div>
+          <div class="dd-bar db-these"></div>
+          <div class="dd-note"><strong>Close</strong> — next to you · "these keys" (in your hand)</div>
+        </div>
+        <div style="height:12px"></div>
+        <div class="dd-row">
+          <div class="dd-label" style="color:var(--those)">THOSE</div>
+          <div class="dd-bar db-those"></div>
+          <div class="dd-note"><strong>Far</strong> — over there · "those buildings" (in the distance)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The 2×2 grid -->
+    <div style="background:var(--s1);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--sha);">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--border);">
+        <div style="padding:11px 16px;background:var(--s2);border-right:1px solid var(--border);"></div>
+        <div style="padding:11px 16px;text-align:center;border-right:1px solid var(--border);font-family:'Azeret Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--this);">NEAR 📍</div>
+        <div style="padding:11px 16px;text-align:center;font-family:'Azeret Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--that);">FAR 🔭</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--border);">
+        <div style="padding:13px 16px;background:var(--s2);border-right:1px solid var(--border);font-family:'Azeret Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);">SINGULAR (1)</div>
+        <div style="padding:13px 16px;text-align:center;border-right:1px solid var(--border);">
+          <span style="font-family:'Syne',sans-serif;font-weight:900;font-size:26px;color:var(--this);">THIS</span>
+          <div style="font-size:11px;color:var(--muted);font-style:italic;margin-top:2px;">este / esta / esto</div>
+        </div>
+        <div style="padding:13px 16px;text-align:center;">
+          <span style="font-family:'Syne',sans-serif;font-weight:900;font-size:26px;color:var(--that);">THAT</span>
+          <div style="font-size:11px;color:var(--muted);font-style:italic;margin-top:2px;">ese / esa / eso / aquel</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;">
+        <div style="padding:13px 16px;background:var(--s2);border-right:1px solid var(--border);font-family:'Azeret Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);">PLURAL (2+)</div>
+        <div style="padding:13px 16px;text-align:center;border-right:1px solid var(--border);">
+          <span style="font-family:'Syne',sans-serif;font-weight:900;font-size:26px;color:var(--these);">THESE</span>
+          <div style="font-size:11px;color:var(--muted);font-style:italic;margin-top:2px;">estos / estas</div>
+        </div>
+        <div style="padding:13px 16px;text-align:center;">
+          <span style="font-family:'Syne',sans-serif;font-weight:900;font-size:26px;color:var(--those);">THOSE</span>
+          <div style="font-size:11px;color:var(--muted);font-style:italic;margin-top:2px;">esos / esas / aquellos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 01 — EACH WORD IN DETAIL -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">01</span>
+      <h2>Each Word in Detail</h2>
+    </div>
+    <div class="prox-grid">
+
+      <div class="prox-block">
+        <div class="pb-head h-this">
+          <div class="pb-word">THIS</div>
+          <div class="pb-meta">
+            <div class="pb-title">Singular + Near</div>
+            <div class="pb-sub">1 thing · close to you · present moment</div>
+          </div>
+          <div class="pb-icon">👇</div>
+        </div>
+        <div class="pb-body">
+          <div class="pb-row h-this"><div class="pb-dot"></div><div><div class="pb-en"><em>This</em> is my phone.</div><div class="pb-es">Este es mi teléfono. (lo tengo en la mano)</div></div></div>
+          <div class="pb-row h-this"><div class="pb-dot"></div><div><div class="pb-en">Can you try <em>this</em> coffee?</div><div class="pb-es">¿Puedes probar este café? (lo tienes enfrente)</div></div></div>
+          <div class="pb-row h-this"><div class="pb-dot"></div><div><div class="pb-en"><em>This</em> is Ana — she's my friend.</div><div class="pb-es">Esta es Ana — es mi amiga. (presentando)</div></div></div>
+          <div class="pb-row h-this"><div class="pb-dot"></div><div><div class="pb-en">I love <em>this</em> song!</div><div class="pb-es">¡Me encanta esta canción! (sonando ahora)</div></div></div>
+          <div class="pb-row h-this"><div class="pb-dot"></div><div><div class="pb-en"><em>This</em> week is very busy.</div><div class="pb-es">Esta semana está muy ocupada. (tiempo presente)</div></div></div>
+        </div>
+      </div>
+
+      <div class="prox-block">
+        <div class="pb-head h-that">
+          <div class="pb-word">THAT</div>
+          <div class="pb-meta">
+            <div class="pb-title">Singular + Far</div>
+            <div class="pb-sub">1 thing · away from you · past moment</div>
+          </div>
+          <div class="pb-icon">👉</div>
+        </div>
+        <div class="pb-body">
+          <div class="pb-row h-that"><div class="pb-dot"></div><div><div class="pb-en">What is <em>that</em> building over there?</div><div class="pb-es">¿Qué es ese edificio de allá?</div></div></div>
+          <div class="pb-row h-that"><div class="pb-dot"></div><div><div class="pb-en">Did you see <em>that</em>?!</div><div class="pb-es">¿Viste eso? (algo que pasó)</div></div></div>
+          <div class="pb-row h-that"><div class="pb-dot"></div><div><div class="pb-en">I loved <em>that</em> movie we watched.</div><div class="pb-es">Me encantó esa película que vimos. (pasado)</div></div></div>
+          <div class="pb-row h-that"><div class="pb-dot"></div><div><div class="pb-en">Can you pass me <em>that</em> book on the shelf?</div><div class="pb-es">¿Me pasas ese libro del estante?</div></div></div>
+          <div class="pb-row h-that"><div class="pb-dot"></div><div><div class="pb-en"><em>That</em> was a great idea!</div><div class="pb-es">¡Esa fue una gran idea! (ya pasó)</div></div></div>
+        </div>
+      </div>
+
+      <div class="prox-block">
+        <div class="pb-head h-these">
+          <div class="pb-word">THESE</div>
+          <div class="pb-meta">
+            <div class="pb-title">Plural + Near</div>
+            <div class="pb-sub">2+ things · close to you</div>
+          </div>
+          <div class="pb-icon">🤲</div>
+        </div>
+        <div class="pb-body">
+          <div class="pb-row h-these"><div class="pb-dot"></div><div><div class="pb-en"><em>These</em> are my new shoes!</div><div class="pb-es">¡Estos son mis zapatos nuevos! (los llevo puestos)</div></div></div>
+          <div class="pb-row h-these"><div class="pb-dot"></div><div><div class="pb-en">Have you tried <em>these</em> arepas?</div><div class="pb-es">¿Has probado estas arepas? (están en la mesa)</div></div></div>
+          <div class="pb-row h-these"><div class="pb-dot"></div><div><div class="pb-en"><em>These</em> photos are amazing!</div><div class="pb-es">¡Estas fotos son increíbles! (las estás viendo)</div></div></div>
+          <div class="pb-row h-these"><div class="pb-dot"></div><div><div class="pb-en">I bought <em>these</em> at the market.</div><div class="pb-es">Compré estos en el mercado. (los tienes)</div></div></div>
+          <div class="pb-row h-these"><div class="pb-dot"></div><div><div class="pb-en"><em>These</em> days everyone uses their phone.</div><div class="pb-es">Hoy en día todos usan el teléfono. (tiempo presente)</div></div></div>
+        </div>
+      </div>
+
+      <div class="prox-block">
+        <div class="pb-head h-those">
+          <div class="pb-word">THOSE</div>
+          <div class="pb-meta">
+            <div class="pb-title">Plural + Far</div>
+            <div class="pb-sub">2+ things · away from you · past</div>
+          </div>
+          <div class="pb-icon">🔭</div>
+        </div>
+        <div class="pb-body">
+          <div class="pb-row h-those"><div class="pb-dot"></div><div><div class="pb-en">Look at <em>those</em> mountains!</div><div class="pb-es">¡Mira esas montañas! (a lo lejos)</div></div></div>
+          <div class="pb-row h-those"><div class="pb-dot"></div><div><div class="pb-en">Who are <em>those</em> people over there?</div><div class="pb-es">¿Quiénes son esas personas de allá?</div></div></div>
+          <div class="pb-row h-those"><div class="pb-dot"></div><div><div class="pb-en"><em>Those</em> were the best years of my life.</div><div class="pb-es">Esos fueron los mejores años de mi vida. (pasado)</div></div></div>
+          <div class="pb-row h-those"><div class="pb-dot"></div><div><div class="pb-en">I remember <em>those</em> old songs.</div><div class="pb-es">Recuerdo esas canciones viejas.</div></div></div>
+          <div class="pb-row h-those"><div class="pb-dot"></div><div><div class="pb-en"><em>Those</em> shoes on the top shelf — can you get them?</div><div class="pb-es">Esos zapatos en el estante de arriba — ¿puedes alcanzarlos?</div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 02 — ADJECTIVE vs PRONOUN -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">02</span>
+      <h2>Adjective vs Pronoun — Two Ways to Use Them</h2>
+    </div>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">These words can work in two ways: <strong style="color:var(--cream)">before a noun</strong> (adjective) or <strong style="color:var(--cream)">alone</strong> (pronoun). Same word, two roles!</p>
+    <div class="pva-grid">
+      <div class="pva-block">
+        <div class="pva-head adj">✦ As an Adjective — before a noun</div>
+        <div class="pva-row h-adj"><div class="pv-en"><em>This</em> book is great.</div><div class="pv-es">Este libro es genial.</div><div class="pv-note">this + noun ✓</div></div>
+        <div class="pva-row h-adj"><div class="pv-en"><em>That</em> restaurant was delicious.</div><div class="pv-es">Ese restaurante estaba delicioso.</div><div class="pv-note">that + noun ✓</div></div>
+        <div class="pva-row h-adj"><div class="pv-en"><em>These</em> mangoes are fresh.</div><div class="pv-es">Estos mangos están frescos.</div><div class="pv-note">these + noun ✓</div></div>
+        <div class="pva-row h-adj"><div class="pv-en"><em>Those</em> old photos are beautiful.</div><div class="pv-es">Esas fotos viejas son hermosas.</div><div class="pv-note">those + noun ✓</div></div>
+        <div class="pva-row h-adj"><div class="pv-en">I want <em>this</em> color, not <em>that</em> one.</div><div class="pv-es">Quiero este color, no ese.</div><div class="pv-note">this/that + noun ✓</div></div>
+      </div>
+      <div class="pva-block">
+        <div class="pva-head pro">◈ As a Pronoun — replaces the noun</div>
+        <div class="pva-row h-pro"><div class="pv-en"><em>This</em> is delicious! (= this food)</div><div class="pv-es">¡Esto está delicioso!</div><div class="pv-note">this alone = pronoun ✓</div></div>
+        <div class="pva-row h-pro"><div class="pv-en">Is <em>that</em> your bag?</div><div class="pv-es">¿Esa es tu bolsa?</div><div class="pv-note">that alone = pronoun ✓</div></div>
+        <div class="pva-row h-pro"><div class="pv-en"><em>These</em> are mine.</div><div class="pv-es">Estos son míos.</div><div class="pv-note">these alone = pronoun ✓</div></div>
+        <div class="pva-row h-pro"><div class="pv-en"><em>Those</em> look expensive.</div><div class="pv-es">Esos parecen caros.</div><div class="pv-note">those alone = pronoun ✓</div></div>
+        <div class="pva-row h-pro"><div class="pv-en">Hello, <em>this</em> is María. (on the phone)</div><div class="pv-es">Hola, soy / habla María. (por teléfono)</div><div class="pv-note">phone intro — classic use! ✓</div></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 03 — SPECIAL USES -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">03</span>
+      <h2>Special Uses — <span style="color:var(--those)">Beyond Just Distance</span></h2>
+    </div>
+    <div class="use-strip">
+      <div class="use-card">
+        <div class="uc-icon">📞</div>
+        <div class="uc-title" style="color:var(--this)">Phone Calls</div>
+        <div class="uc-ex">"Hello, <span style="color:var(--this);font-weight:800;">this</span> is Carlos."</div>
+        <div class="uc-es">Hola, habla / soy Carlos.</div>
+        <div style="margin-top:8px;font-size:13px;color:var(--muted);">En teléfono → <strong style="color:var(--cream)">this</strong> para presentarse · <strong style="color:var(--cream)">that</strong> para preguntar: "Who is <span style="color:var(--that);font-weight:700;">that</span>?"</div>
+      </div>
+      <div class="use-card">
+        <div class="uc-icon">⏰</div>
+        <div class="uc-title" style="color:var(--these)">Time Reference</div>
+        <div class="uc-ex"><span style="color:var(--this);font-weight:800;">this</span> week / year / morning</div>
+        <div class="uc-es">esta semana / año / mañana</div>
+        <div style="margin-top:8px;font-size:13px;color:var(--muted);"><strong style="color:var(--this)">This</strong> = now/present · <strong style="color:var(--that)">That</strong>/<strong style="color:var(--those)">those</strong> = past: <em>"<span style="color:var(--those)">those</span> were great days"</em></div>
+      </div>
+      <div class="use-card">
+        <div class="uc-icon">🤝</div>
+        <div class="uc-title" style="color:var(--that)">Introductions</div>
+        <div class="uc-ex">"<span style="color:var(--this);font-weight:800;">This</span> is my friend, Sara."</div>
+        <div class="uc-es">Te presento a mi amiga Sara.</div>
+        <div style="margin-top:8px;font-size:13px;color:var(--muted);">Cuando presentas a alguien que está <strong style="color:var(--cream)">cerca</strong> de ti → siempre <strong style="color:var(--this)">this</strong></div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:18px 22px;box-shadow:var(--sha);">
+      <div style="font-family:'Azeret Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:12px;">🧠 Memory hack — the pattern is clear:</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;text-align:center;">
+        <div><div style="font-family:'Syne',sans-serif;font-weight:900;font-size:20px;color:var(--this)">THIS</div><div style="font-size:12px;color:var(--muted)">here + 1</div></div>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:900;font-size:20px;color:var(--that)">THAT</div><div style="font-size:12px;color:var(--muted)">there + 1</div></div>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:900;font-size:20px;color:var(--these)">THESE</div><div style="font-size:12px;color:var(--muted)">here + many</div></div>
+        <div><div style="font-family:'Syne',sans-serif;font-weight:900;font-size:20px;color:var(--those)">THOSE</div><div style="font-size:12px;color:var(--muted)">there + many</div></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 04 — EXAMPLES WITH ALL FOUR WORDS -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">04</span>
+      <h2>Example Sentences</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card c-this fade-up">
+        <div class="card-type">◈ THIS — singular near</div>
+        <div class="en"><span class="h-this">This</span> is the best empanada I've ever eaten!</div>
+        <div class="es">¡Esta es la mejor empanada que he comido!</div>
+      </div>
+      <div class="card c-that fade-up">
+        <div class="card-type">◈ THAT — singular far</div>
+        <div class="en">What is <span class="h-that">that</span> tall building over there?</div>
+        <div class="es">¿Qué es ese edificio alto de allá?</div>
+      </div>
+      <div class="card c-these fade-up">
+        <div class="card-type">◈ THESE — plural near</div>
+        <div class="en"><span class="h-these">These</span> are the documents you need to sign.</div>
+        <div class="es">Estos son los documentos que necesitas firmar.</div>
+      </div>
+      <div class="card c-those fade-up">
+        <div class="card-type">◈ THOSE — plural far</div>
+        <div class="en">Who are <span class="h-those">those</span> people dancing at the back?</div>
+        <div class="es">¿Quiénes son esas personas bailando al fondo?</div>
+      </div>
+      <div class="card c-this fade-up">
+        <div class="card-type">◈ THIS — time (present)</div>
+        <div class="en">I'm really busy <span class="h-this">this</span> week. Can we meet next Monday?</div>
+        <div class="es">Estoy muy ocupado esta semana. ¿Podemos vernos el próximo lunes?</div>
+      </div>
+      <div class="card c-those fade-up">
+        <div class="card-type">◈ THOSE — time (past)</div>
+        <div class="en"><span class="h-those">Those</span> were amazing times. I miss <span class="h-those">those</span> days.</div>
+        <div class="es">Esos fueron tiempos increíbles. Extraño esos días.</div>
+      </div>
+      <div class="card c-mix fade-up">
+        <div class="card-type">◈ ALL FOUR together</div>
+        <div class="en"><span class="h-this">This</span> bag is mine, <span class="h-that">that</span> one is yours. <span class="h-these">These</span> shoes are new, <span class="h-those">those</span> are old.</div>
+        <div class="es">Esta bolsa es mía, esa es tuya. Estos zapatos son nuevos, esos son viejos.</div>
+      </div>
+      <div class="card c-that fade-up">
+        <div class="card-type">◈ THAT — reaction / comment</div>
+        <div class="en"><span class="h-that">That</span> was incredible! I can't believe <span class="h-that">that</span> happened!</div>
+        <div class="es">¡Eso fue increíble! ¡No puedo creer que eso pasó!</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 05 — CONVERSATION -->
+  <div class="section fade-up">
+    <div class="section-label">
+      <span class="section-num">05</span>
+      <h2>Real Conversation</h2>
+    </div>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">
+      Camila y Tomás están de compras en el centro comercial.
+      <span style="color:var(--this);font-weight:700;">Verde = THIS</span> ·
+      <span style="color:var(--that);font-weight:700;">Naranja = THAT</span> ·
+      <span style="color:var(--these);font-weight:700;">Morado = THESE</span> ·
+      <span style="color:var(--those);font-weight:700;">Amarillo = THOSE</span>
+    </p>
+    <div class="conversation">
+      <div class="conv-header">
+        <div class="persona">
+          <div class="avatar av-a">C</div>
+          <div><div class="persona-name">Camila</div><div class="persona-desc">Shopping in Medellín</div></div>
+        </div>
+        <div style="color:rgba(232,236,255,0.1);font-size:22px;">↔</div>
+        <div class="persona">
+          <div class="avatar av-b">T</div>
+          <div><div class="persona-name">Tomás</div><div class="persona-desc">Patient friend</div></div>
+        </div>
+      </div>
+
+      <div class="bubble-row">
+        <div class="avatar av-a">C</div>
+        <div class="bubble">
+          Tomás, look! <span class="vthis">This</span> jacket is perfect for me. What do you think?
+          <div class="tr">Tomás, ¡mira! Esta chaqueta es perfecta para mí. ¿Qué piensas?</div>
+        </div>
+      </div>
+      <div class="bubble-row right">
+        <div class="avatar av-b">T</div>
+        <div class="bubble">
+          It looks great! But what about <span class="vthat">that</span> one over there — the blue one on the rack? I think <span class="vthat">that</span> one suits you better.
+          <div class="tr">¡Se ve genial! Pero ¿qué tal esa de allá — la azul en el perchero? Creo que esa te queda mejor.</div>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar av-a">C</div>
+        <div class="bubble">
+          Hmm... <span class="vthat">that</span> one is nice too. Oh! And look at <span class="vthose">those</span> boots near the window! <span class="vthose">Those</span> are amazing!
+          <div class="tr">Hmm... esa también está bonita. ¡Oh! ¿Y mira esas botas cerca de la ventana? ¡Esas son increíbles!</div>
+        </div>
+      </div>
+      <div class="bubble-row right">
+        <div class="avatar av-b">T</div>
+        <div class="bubble">
+          Ha! Camila... we came to buy ONE thing. How many items are in your arms right now? <span class="vthese">These</span> two jackets, <span class="vthose">those</span> boots... and what else?
+          <div class="tr">¡Ja! Camila... vinimos a comprar UNA cosa. ¿Cuántos artículos tienes en los brazos ahora mismo? Estas dos chaquetas, esas botas... ¿y qué más?</div>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar av-a">C</div>
+        <div class="bubble">
+          <span class="vthese">These</span> earrings too... I found them next to the cashier. <span class="vthis">This</span> store is dangerous for my wallet! 😄
+          <div class="tr">También estos aretes... los encontré al lado de la caja. ¡Esta tienda es peligrosa para mi billetera!</div>
+        </div>
+      </div>
+      <div class="bubble-row right">
+        <div class="avatar av-b">T</div>
+        <div class="bubble">
+          Listen — let's make a deal. You pick <span class="vthis">this</span> jacket or <span class="vthat">that</span> one. Not both. And forget <span class="vthose">those</span> boots — they're really expensive.
+          <div class="tr">Mira — hagamos un trato. Escoges esta chaqueta o esa. No las dos. Y olvida esas botas — son muy caras.</div>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar av-a">C</div>
+        <div class="bubble">
+          Fine... I'll take <span class="vthis">this</span> one. It's the closest to what I wanted. But I'm taking <span class="vthese">these</span> earrings too — they're only five dollars!
+          <div class="tr">Bien... me llevo esta. Es la más cercana a lo que quería. ¡Pero también me llevo estos aretes — solo cuestan cinco dólares!</div>
+        </div>
+      </div>
+      <div class="bubble-row right">
+        <div class="avatar av-b">T</div>
+        <div class="bubble">
+          OK, ok. <span class="vthose">Those</span> were the exact words you said last time too. And the time before <span class="vthat">that</span>! 😂
+          <div class="tr">Ok, ok. Esas fueron exactamente las palabras que dijiste la última vez también. ¡Y la vez antes de esa!</div>
+        </div>
+      </div>
+      <div class="bubble-row">
+        <div class="avatar av-a">C</div>
+        <div class="bubble">
+          <span class="vthat">That</span> is completely different! <span class="vthis">This</span> time I'm being very reasonable! 😇
+          <div class="tr">¡Eso es completamente diferente! ¡Esta vez estoy siendo muy razonable!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <h4>📌 Key Notes</h4>
+      <ul>
+        <li><strong style="color:var(--this)">THIS</strong> = singular + cerca de ti → <em>"this phone"</em> (singular) / <em>"this is great"</em> (pronoun)</li>
+        <li><strong style="color:var(--that)">THAT</strong> = singular + lejos de ti → <em>"that car"</em> / también para reacciones: <em>"that was amazing!"</em></li>
+        <li><strong style="color:var(--these)">THESE</strong> = plural + cerca de ti → <em>"these shoes"</em> / <em>"these are mine"</em></li>
+        <li><strong style="color:var(--those)">THOSE</strong> = plural + lejos de ti → <em>"those mountains"</em> / pasado: <em>"those were great times"</em></li>
+        <li>Como <strong>adjetivo</strong>: va antes del sustantivo → <code>this book · that idea · these people · those days</code></li>
+        <li>Como <strong>pronombre</strong>: va solo, reemplaza al sustantivo → <code>This is mine. That looks good. These are new.</code></li>
+        <li>Por teléfono: <code>This is Carlos speaking.</code> = Habla Carlos / Soy Carlos</li>
+        <li>Para presentar personas: <code>This is my friend Ana.</code> (siempre THIS, nunca "here is")</li>
+        <li>Tiempo presente → <code>this week / this year / this morning</code> · Tiempo pasado → <code>those days / that year / that time</code></li>
+      </ul>
+      <div class="warn-box">
+        <p><strong style="color:var(--that)">⚠ Common mistakes:</strong></p>
+        <p>✗ <code>These is my friend.</code> &nbsp;&nbsp; ✓ <code>This is my friend.</code> (una persona = singular)</p>
+        <p>✗ <code>I like this shoes.</code> &nbsp;&nbsp; ✓ <code>I like these shoes.</code> (shoes = plural → these)</p>
+        <p>✗ <code>Look at this mountains over there!</code> &nbsp;&nbsp; ✓ <code>Look at those mountains!</code> (far + plural)</p>
+        <p>✗ <code>That were amazing days.</code> &nbsp;&nbsp; ✓ <code>Those were amazing days.</code> (days = plural → those)</p>
+        <p>✗ <code>Here is my colleague, Mark.</code> &nbsp;&nbsp; ✓ <code>This is my colleague, Mark.</code></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  English Lesson &nbsp;·&nbsp; Demonstratives &nbsp;·&nbsp; This / That / These / Those &nbsp;·&nbsp; A1–A2 Level
+</footer>
+
+</body>
+</html>

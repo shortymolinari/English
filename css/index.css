@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── Variables ── */
+:root {
+  --ink: #0f0e0c;
+  --cream: #f7f3ec;
+  --cream-dark: #ede8df;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --teal: #1a6b6b;
+  --teal-light: #2a8f8f;
+  --rust: #c0392b;
+  --muted: #6b6560;
+  --card-bg: #ffffff;
+  --shadow: 0 2px 12px rgba(15,14,12,.08);
+  --shadow-hover: 0 8px 32px rgba(15,14,12,.14);
+  --radius: 10px;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Hero ── */
+.hero {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 4rem 2rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201,168,76,.04) 40px,
+      rgba(201,168,76,.04) 41px
+    );
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .3rem .9rem;
+  border-radius: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.2;
+  margin-bottom: .8rem;
+  position: relative;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: rgba(247,243,236,.65);
+  max-width: 520px;
+  margin: 0 auto 2rem;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+
+.stat-label {
+  font-size: .78rem;
+  color: rgba(247,243,236,.5);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Section ── */
+.section {
+  padding: 3rem 0 2rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+.section-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.section-title span {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .15rem;
+}
+
+.section-count {
+  margin-left: auto;
+  font-family: 'DM Mono', monospace;
+  font-size: .78rem;
+  color: var(--muted);
+  background: var(--cream-dark);
+  padding: .2rem .6rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+/* ── Cards Grid ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Lesson Card ── */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  border: 1px solid rgba(15,14,12,.06);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-accent {
+  height: 4px;
+}
+
+.card-body {
+  padding: 1.1rem 1.2rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-level {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .2rem .55rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: .7rem;
+  align-self: flex-start;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin-bottom: .45rem;
+  color: var(--ink);
+}
+
+.card-desc {
+  font-size: .83rem;
+  color: var(--muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .3rem;
+  margin-top: .9rem;
+  font-size: .8rem;
+  font-weight: 600;
+  opacity: .7;
+  transition: opacity .2s;
+}
+
+.card:hover .card-cta {
+  opacity: 1;
+}
+
+.card-cta svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ── Color themes per section ── */
+
+/* Tenses → Teal */
+.theme-teal .section-icon { background: rgba(26,107,107,.12); color: var(--teal); }
+.theme-teal .card-accent { background: var(--teal); }
+.theme-teal .card-level { background: rgba(26,107,107,.1); color: var(--teal); }
+.theme-teal .card-cta { color: var(--teal); }
+.theme-teal .section-header { border-color: rgba(26,107,107,.2); }
+
+/* Verbs → Gold */
+.theme-gold .section-icon { background: rgba(201,168,76,.12); color: #8a6d1a; }
+.theme-gold .card-accent { background: var(--gold); }
+.theme-gold .card-level { background: rgba(201,168,76,.12); color: #7a5e10; }
+.theme-gold .card-cta { color: #8a6d1a; }
+.theme-gold .section-header { border-color: rgba(201,168,76,.25); }
+
+/* Nouns → Rust/Orange */
+.theme-rust .section-icon { background: rgba(192,57,43,.1); color: var(--rust); }
+.theme-rust .card-accent { background: var(--rust); }
+.theme-rust .card-level { background: rgba(192,57,43,.09); color: var(--rust); }
+.theme-rust .card-cta { color: var(--rust); }
+.theme-rust .section-header { border-color: rgba(192,57,43,.18); }
+
+/* Adjectives → Purple */
+.theme-purple .section-icon { background: rgba(120,60,180,.1); color: #7b3cbf; }
+.theme-purple .card-accent { background: #7b3cbf; }
+.theme-purple .card-level { background: rgba(120,60,180,.09); color: #7b3cbf; }
+.theme-purple .card-cta { color: #7b3cbf; }
+.theme-purple .section-header { border-color: rgba(120,60,180,.18); }
+
+/* Prepositions → Blue */
+.theme-blue .section-icon { background: rgba(30,100,200,.1); color: #1e64c8; }
+.theme-blue .card-accent { background: #1e64c8; }
+.theme-blue .card-level { background: rgba(30,100,200,.09); color: #1e64c8; }
+.theme-blue .card-cta { color: #1e64c8; }
+.theme-blue .section-header { border-color: rgba(30,100,200,.18); }
+
+/* Numbers → Green */
+.theme-green .section-icon { background: rgba(30,140,80,.1); color: #1e8c50; }
+.theme-green .card-accent { background: #1e8c50; }
+.theme-green .card-level { background: rgba(30,140,80,.09); color: #1e8c50; }
+.theme-green .card-cta { color: #1e8c50; }
+.theme-green .section-header { border-color: rgba(30,140,80,.2); }
+
+/* ── Footer ── */
+footer {
+  background: var(--ink);
+  color: rgba(247,243,236,.45);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: .83rem;
+}
+
+footer strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero { padding: 3rem 1.2rem 2.5rem; }
+  .hero-stats { gap: 1.5rem; }
+  .cards-grid { grid-template-columns: 1fr 1fr; }
+  .section { padding: 2rem 0 1.5rem; }
+}
+
+@media (max-width: 380px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}
