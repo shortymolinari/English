@@ -92,13 +92,23 @@
   }
 
   /* TABLE — conjugation */
+
+  /* Scroll wrapper: lets the table keep its natural width on mobile
+     instead of squashing columns or overflowing the viewport silently. */
+  .conj-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth momentum scroll on iOS */
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+  }
+
   .conj-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 15px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
-    border-radius: 8px;
-    overflow: hidden;
+    /* border-radius is applied to the wrapper; overflow:hidden on a
+       border-collapse table is ignored by most browsers anyway. */
   }
   .conj-table thead {
     background: var(--ink);
@@ -125,6 +135,21 @@
     font-family: 'DM Mono', monospace;
     color: var(--gold);
     font-size: 13px;
+  }
+
+  /* On narrow viewports, tighten cell padding so the table fits
+     in more cases before horizontal scroll kicks in. */
+  @media (max-width: 600px) {
+    .conj-table th, .conj-table td {
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+    .conj-table thead {
+      font-size: 10px;
+    }
+    .conj-table .short {
+      font-size: 12px;
+    }
   }
 
   /* SENTENCE CARDS */
