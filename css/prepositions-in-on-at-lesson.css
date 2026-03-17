@@ -216,8 +216,8 @@
   .h-at { color:var(--at); font-weight:800; }
 
   /* ── TRICKY TABLE ──────────────── */
-  .tricky-wrap { background:var(--s1); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:var(--sha); }
-  .tricky-table { width:100%; border-collapse:collapse; font-size:14px; }
+  .tricky-wrap { background:var(--s1); border:1px solid var(--border); border-radius:14px; overflow-x:auto; -webkit-overflow-scrolling:touch; box-shadow:var(--sha); }
+  .tricky-table { width:100%; border-collapse:collapse; font-size:14px; min-width:560px; }
   .tricky-table thead { background:linear-gradient(90deg,#0d1b3e,#1a2d5a); }
   .tricky-table th {
     padding:11px 18px; text-align:left;

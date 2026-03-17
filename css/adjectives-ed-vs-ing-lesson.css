@@ -142,8 +142,8 @@
   .rs-col.ing-col .rs-en em { color: var(--ing); font-style: normal; font-weight: 800; }
 
   /* ── PAIR TABLE ──────────────────── */
-  .pair-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--sha); }
-  .pair-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .pair-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: var(--sha); }
+  .pair-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
   .pair-table thead { background: linear-gradient(90deg, rgba(247,37,133,0.15), rgba(76,201,240,0.15)); }
   .pair-table th {
     padding: 11px 18px; text-align: left;

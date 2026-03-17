@@ -319,6 +319,12 @@
     padding: 4px 12px; border-radius: 20px;
   }
 
+  /* SECTION 00 — "When Do We Use It?" 2-col grid */
+  @media(max-width:640px){ .when-grid { grid-template-columns: 1fr !important; } }
+
+  /* Hero padding on mobile */
+  @media(max-width:640px){ .hero { padding-left: 20px; padding-right: 20px; } }
+
   /* FOOTER */
   footer {
     background: var(--surface); border-top: 1px solid var(--border);

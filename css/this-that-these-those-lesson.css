@@ -315,6 +315,14 @@
   /* ── FOOTER ─────────────────────── */
   footer { background: var(--s1); border-top: 1px solid var(--border); color: var(--muted); text-align: center; padding: 28px; font-size: 11px; font-family: 'Azeret Mono', monospace; letter-spacing: 2px; text-transform: uppercase; margin-top: 60px; }
 
+  /* ── INLINE GRID OVERRIDES ─────── */
+  /* 2×2 quick-reference grid in section 00 */
+  .quick-ref-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  @media(max-width:480px){ .quick-ref-grid{ grid-template-columns: 1fr; } }
+  /* 4-column memory hack grid in section 03 */
+  .memory-hack-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; text-align: center; }
+  @media(max-width:480px){ .memory-hack-grid{ grid-template-columns: 1fr 1fr; } }
+
   /* ── ANIMATE ───────────────────── */
   .fade-up { opacity: 0; transform: translateY(14px); animation: fadeUp .42s ease forwards; }
   @keyframes fadeUp { to { opacity: 1; transform: none; } }

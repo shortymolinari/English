@@ -143,7 +143,7 @@
   .ex-meaning { font-size: 11px; color: var(--muted); font-style: italic; }
 
   /* ── IRREGULAR TABLE ─────────────────── */
-  .irr-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--sha); }
+  .irr-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: var(--sha); }
   .irr-table { width: 100%; border-collapse: collapse; font-size: 14px; }
   .irr-table thead { background: linear-gradient(90deg, #1a0b2e, #2d1060); }
   .irr-table th {
@@ -274,6 +274,11 @@
   .qr-es .qr-suffix { color: var(--pink); }
   .qr-ies .qr-suffix { color: var(--green); }
   .qr-irr .qr-suffix { color: var(--yellow); font-size:20px; }
+
+  /* SECTION 04 — -f/-fe grid & irregular table */
+  @media(max-width:640px){
+    .fve-grid { grid-template-columns: 1fr 1fr !important; }
+  }
 
   /* ── FOOTER ──────────────────────── */
   footer {

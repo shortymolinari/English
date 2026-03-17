@@ -204,7 +204,7 @@
 
   /* ── A vs AN COMPARISON TABLE ─────── */
   .cmp-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  .cmp-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 0; box-shadow: var(--sha); }
+  .cmp-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 0; box-shadow: var(--sha); }
   .cmp-table th {
     padding: 11px 18px; text-align: left;
     font-family: 'Share Tech Mono', monospace; font-size: 10px;
@@ -283,6 +283,12 @@
   }
   .warn-box p { font-size: 14px; color: rgba(232,238,255,0.75); margin-bottom: 5px; }
   .warn-box code { font-family:'Share Tech Mono',monospace; background:rgba(255,118,117,0.1); color:var(--red); font-size:12px; padding:1px 6px; border-radius:3px; }
+
+  /* SECTION 00 & 02 — inline 2-col grids */
+  @media(max-width:640px){
+    .when-grid { grid-template-columns: 1fr !important; }
+    .tricky-words-grid { grid-template-columns: 1fr !important; }
+  }
 
   /* ── FOOTER ──────────────────────── */
   footer {

@@ -93,6 +93,8 @@
     position: relative;
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin-top: 28px;
     background: rgba(255,255,255,0.05);
@@ -407,6 +409,9 @@
     padding: 4px 12px;
     border-radius: 20px;
   }
+
+  /* Hero padding on mobile */
+  @media(max-width:640px){ .hero { padding-left: 20px; padding-right: 20px; } }
 
   /* FOOTER */
   footer {

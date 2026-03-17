@@ -130,7 +130,8 @@
   .pc-id .pv-past { color: var(--yellow); }
 
   /* REGULAR VERBS TABLE */
-  .reg-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+  /* overflow-x: auto allows horizontal scroll on mobile; overflow: hidden would clip it */
+  .reg-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 10px; }
   .reg-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .reg-table thead { background: var(--s3); }
   .reg-table th {
@@ -156,7 +157,8 @@
   .sb-id { background: rgba(255,224,102,0.1); color: var(--yellow); border: 1px solid rgba(255,224,102,0.2); }
 
   /* IRREGULAR TABLE */
-  .irr-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+  /* overflow-x: auto allows horizontal scroll on mobile; overflow: hidden would clip it */
+  .irr-table-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 10px; }
   .irr-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .irr-table thead { background: var(--s3); }
   .irr-table th {
@@ -216,3 +218,21 @@
   /* SCROLL FADE */
   .fade-up { opacity:0; transform:translateY(14px); animation:fadeUp .4s ease forwards; }
   @keyframes fadeUp { to{opacity:1;transform:none;} }
+
+  /* TYPES GRID — Section 3 "4 Types of Irregular Verbs" */
+  /* 2-column on desktop, single column on mobile so each card has full width */
+  .types-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .types-grid { grid-template-columns: 1fr; } }
+
+  /* TABLE MOBILE TWEAKS */
+  /* Reduce cell padding and font size so columns stay readable while scrolling */
+  @media (max-width: 640px) {
+    .reg-table th,
+    .reg-table td { padding: 7px 10px; font-size: 12px; }
+    .irr-table th,
+    .irr-table td { padding: 7px 10px; font-size: 12px; }
+    .pron-text,
+    .irr-table .pron1,
+    .irr-table .pron2,
+    .irr-table .pron3 { font-size: 10px; }
+  }

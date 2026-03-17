@@ -232,10 +232,11 @@
   .t-on .chip-en { color: var(--on); }
   .t-at .chip-en { color: var(--at); }
   @media(max-width:500px){ .cat-row{grid-template-columns:1fr;} .cat-label-cell{border-right:none; border-bottom:1px solid var(--border2);} }
+  @media(max-width:520px){ .sb-markers{flex-direction:column; align-items:flex-start; gap:12px;} .sb-dot{margin:-0px 0 8px 0;} }
 
   /* ── QUICK COMPARISON TABLE ─────── */
-  .cmp-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: var(--sha); }
-  .cmp-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .cmp-wrap { background: var(--s1); border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: var(--sha); }
+  .cmp-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
   .cmp-table thead { background: var(--ink); }
   .cmp-table th { padding: 11px 18px; text-align: left; font-family: 'Source Code Pro', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid rgba(245,240,232,0.1); }
   .cmp-table th:nth-child(1) { color: rgba(245,240,232,0.4); }

@@ -105,8 +105,8 @@
   .nc-es { font-size:11px; color:var(--muted); font-style:italic; }
 
   /* ── BIG NUMBERS ───────────────── */
-  .big-num-wrap { background:var(--s1); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:var(--sha); }
-  .big-table { width:100%; border-collapse:collapse; font-size:14px; }
+  .big-num-wrap { background:var(--s1); border:1px solid var(--border); border-radius:14px; overflow-x:auto; -webkit-overflow-scrolling:touch; box-shadow:var(--sha); }
+  .big-table { width:100%; border-collapse:collapse; font-size:14px; min-width:520px; }
   .big-table thead { background: linear-gradient(90deg, #18120a, #2e1f0a); }
   .big-table th {
     padding: 11px 18px; text-align:left;
@@ -222,9 +222,10 @@
 
   /* ── YEAR TABLE ─────────────────── */
   .year-rules {
-    background:var(--s1); border:1px solid var(--border); border-radius:12px; overflow:hidden; box-shadow:var(--sha);
+    background:var(--s1); border:1px solid var(--border); border-radius:12px; overflow-x:auto; -webkit-overflow-scrolling:touch; box-shadow:var(--sha);
   }
-  .yr-row { display:grid; grid-template-columns:150px 1fr 1fr; gap:0; padding:12px 20px; border-bottom:1px solid var(--border2); align-items:center; font-size:14px; }
+  .yr-row { display:grid; grid-template-columns:150px 1fr 1fr; gap:0; padding:12px 20px; border-bottom:1px solid var(--border2); align-items:center; font-size:14px; min-width:420px; }
+  @media(max-width:500px){ .yr-row{ grid-template-columns:90px 1fr 1fr; padding:10px 14px; } }
   .yr-row.header { background:linear-gradient(90deg, #18120a, #2e1f0a); }
   .yr-row:last-child { border-bottom:none; }
   .yr-num { font-family:'Unbounded',monospace; font-weight:700; color:var(--gold); font-size:15px; }
