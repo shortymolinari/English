@@ -38,7 +38,7 @@
   /* Three big pillars */
   .hero-pillars {
     position: relative; display: flex; justify-content: center; align-items: stretch;
-    gap: 0; max-width: 760px; margin: 0 auto 18px;
+    gap: 0; max-width: 900px; margin: 0 auto 18px;
     border: 1px solid rgba(248,245,240,0.07); border-radius: 8px; overflow: hidden;
   }
   .hp-col { flex: 1; padding: 14px 20px; text-align: center; position: relative; }
