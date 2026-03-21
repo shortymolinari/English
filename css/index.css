@@ -304,6 +304,13 @@ body {
 .theme-green .card-cta { color: #1e8c50; }
 .theme-green .section-header { border-color: rgba(30,140,80,.2); }
 
+/* Adverbs → Indigo */
+.theme-indigo .section-icon { background: rgba(99,80,220,.12); color: #6350dc; }
+.theme-indigo .card-accent { background: #6350dc; }
+.theme-indigo .card-level { background: rgba(99,80,220,.09); color: #6350dc; }
+.theme-indigo .card-cta { color: #6350dc; }
+.theme-indigo .section-header { border-color: rgba(99,80,220,.2); }
+
 /* ── Footer ── */
 footer {
   background: var(--ink);
